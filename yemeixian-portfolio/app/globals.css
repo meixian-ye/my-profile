@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Enhanced typography for hero section */
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/* Stats section background text positioning */
+.stat-item h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom spacing utilities */
+.gap-15 {
+  gap: 3.75rem;
+}
+
+.mb-15 {
+  margin-bottom: 3.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .text-7xl {
+    font-size: 3.5rem;
+  }
+
+  .text-9xl {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+  }
+
+  .gap-15 {
+    gap: 2rem;
+  }
+
+  .mb-15 {
+    margin-bottom: 2rem;
+  }
+
+  .text-7xl {
+    font-size: 2.5rem;
+  }
+
+  .text-9xl {
+    font-size: 4rem;
+  }
+
+  .w-80.h-80 {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-cols-2.lg\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
