@@ -1,0 +1,4 @@
+- name: Build and fix paths
+  run: |
+    npm run build
+    node scripts/fix-paths.js
